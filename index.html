@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="demo-wrapper">
+        <div class="container" id="container">
+          <div class="item" id="one">1</div>
+          <div class="item" id="two">2</div>
+        </div>
+        <div class="controls">
+      
+      
+          <table>
+            <caption>Control element One (1)</caption>
+            <tr>
+              <td>flex-basis:</td>
+              <td><input type="text" value="0" onkeyup="var item=document.getElementById('one'); item.style.WebkitFlexBasis = this.value; item.style.flexBasis = this.value;"></td>
+            </tr>
+            <tr>
+              <td>flex-grow</td>
+              <td><input type="text" value="0" onkeyup="var item=document.getElementById('one'); item.style.WebkitFlexGrow = this.value; item.style.flexGrow = this.value;"></td>
+            </tr>
+            <tr>
+              <td>flex-shrink</td>
+              <td><input type="text" value="0" onkeyup="var item=document.getElementById('one'); item.style.WebkitFlexShrink = this.value; item.style.flexShrink = this.value;"></td>
+            </tr>
+          </table>
+      
+      
+          <table>
+            <caption>Control element Two (2)</caption>
+            <tr>
+              <td>flex-basis:</td>
+              <td><input type="text" value="0" onkeyup="var item=document.getElementById('two'); item.style.WebkitFlexBasis = this.value; item.style.flexBasis = this.value;"></td>
+            </tr>
+            <tr>
+              <td>flex-grow</td>
+              <td><input type="text" value="0" onkeyup="var item=document.getElementById('two'); item.style.WebkitFlexGrow = this.value; item.style.flexGrow = this.value;"></td>
+            </tr>
+            <tr>
+              <td>flex-shrink</td>
+              <td><input type="text" value="0" onkeyup="var item=document.getElementById('two'); item.style.WebkitFlexShrink = this.value; item.style.flexShrink = this.value;"></td>
+            </tr>
+          </table>
+      
+          <p class="instructions"><em><small>Note that flex-shrink has no effect when there is positive space in the container. To use it, set the flex basis on both elements such that the sum of the widths is greater than the width of the container.</small></em></p>
+          <p><p>Container width: <strong id="containerWidth"></strong></p></p>
+      </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
